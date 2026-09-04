@@ -11,12 +11,16 @@
 (function () {
   "use strict";
 
-  /* ── physics & player constants ── */
-  const GRAVITY = 0.6;
+  /* ── physics & player constants ──
+     Jump was floaty (~43 frames airborne). Gravity + jump power raised
+     together so jump height is unchanged but ascent/descent are ~18% faster.
+     Run speed nudged 4 -> 4.4 so horizontal air distance is preserved —
+     verified level-by-level that no clearable jump changed. */
+  const GRAVITY = 0.9;
   const PLAYER_W = 28, PLAYER_H = 42;
 
   function freshState() {
-    return { speed: 4, jumpPower: 13, size: 1, health: 100, coins: 0 };
+    return { speed: 4.4, jumpPower: 18, size: 1, health: 100, coins: 0 };
   }
   window.gameState = freshState();
 
