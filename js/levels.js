@@ -36,7 +36,7 @@ const LEVELS =
               { x: 370, y: GROUND_Y, w: 100, h: 60 },
               { x: 620, y: GROUND_Y, w: 280, h: 60 },
             ],
-            spikes: [{ x: 280, y: GROUND_Y - 20, w: 22, h: 20 }],
+            spikes: [{ x: 205, y: GROUND_Y - 20, w: 22, h: 20 }],
             movingSpikes: [],
             movingPlatforms: [],
             fallingBlocks: [],
